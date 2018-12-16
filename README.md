@@ -40,3 +40,18 @@ information about that movie to the terminal:
 * Language of the movie.
 * Plot of the movie.
 * Actors in the movie.
+
+
+This link is a short video presentation on how it works.
+https://drive.google.com/file/d/19Oj2vrEl1BrTxJf4-Pwoq9gkaxYtiTY_/view
+
+
+
+Note for developers:
+---------------------
+Continuing issues with Spotify-this-song. Continued debugging necessary.
+
+Do-What-It-Says function still needs debugging. Issues with data within random.txt file across
+all three functions (Concert-this, Spotify-this and Movie-this).
+
+ 

@@ -48,7 +48,7 @@ function concert() {
       
     axios.get(queryUrl).then(
     function(response) {
-      console.log(queryUrl);
+      
     console.log("Venue: " + response.data[0].venue.name);
     console.log("Location: " + response.data[0].venue.city +", " + response.data[0].venue.country);
     console.log("Time: " + response.data[0].venue.country);
@@ -87,8 +87,10 @@ function concert() {
    
     
   //Spotify function ----------------------------------------------------------------------------------------------
+
+  //DVELOPER'S NOTE ========================================
   // Issues with Spotify-this-song. Continued debugging needed.
-   
+   //=========================================================
 
     // function spotify() {
  
@@ -108,18 +110,19 @@ function concert() {
              // console.log("The Song Album: "+song.album.name);
            
     //     });
-
     //   });
     // }
 
+    //DEVELOPER'S NOTE ==========================================================
     //Do-What-It-Says function still needs debugging. Issues with data within random.txt file across
-    // all three functions (Concert-this, Spotify-this and Movie-this)
+    // all three functions (Concert-this, Spotify-this and Movie-this).
+    //==============================================================================
 
-    function dowhatitsays(){
-      fs.readFile('random.txt', "utf8", function(error, data){
-        var randomText = data.split(',');
+    // function dowhatitsays(){
+    //   fs.readFile('random.txt', "utf8", function(error, data){
+    //     var randomText = data.split(',');
     
-        concert(randomText[1]);
-      });
-    }
+    //     concert(randomText[1]);
+    //   });
+    // }
     
